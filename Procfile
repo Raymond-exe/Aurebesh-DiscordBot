@@ -1,0 +1,1 @@
+worker: java -jar out/Aurebesh-DiscordBot-1.0.0.jar
