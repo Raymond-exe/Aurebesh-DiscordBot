@@ -17,9 +17,9 @@ public class AurebeshTranslator {
 			//System.out.println("Letter at index " + i + ": " + temp);
 			
 			// if this character is a letter or number, skip it. Otherwise, convert to a hex value
-			if ((temp > 'a' && temp < 'z') ||
-				(temp > 'A' && temp < 'Z') ||
-				(temp > '0' && temp < '9')) {
+			if ((temp >= 'a' && temp <= 'z') ||
+				(temp >= 'A' && temp <= 'Z') ||
+				(temp >= '0' && temp <= '9')) {
 				
 				//System.out.println("It's alphanumeric! Skipping...");
 				continue;				
