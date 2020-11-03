@@ -1,3 +1,5 @@
+package discordbot;
+
 public class AurebeshTranslator {
 
 	

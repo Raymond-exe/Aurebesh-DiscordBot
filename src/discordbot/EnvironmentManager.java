@@ -1,3 +1,5 @@
+package discordbot;
+
 import java.util.Map;
 
 public class EnvironmentManager {
