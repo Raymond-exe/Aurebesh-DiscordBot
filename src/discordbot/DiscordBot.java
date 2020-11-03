@@ -32,6 +32,19 @@ public class DiscordBot {
         AurebeshListener cmd = new AurebeshListener();
 
         jda.addEventListener(cmd);
+        
+        if(debugPrintouts) {
+        	System.out.println("[DEBUG - DiscordBot] Logged in as: @" + jda.getSelfUser().getAsTag());
+        	System.out.println("[DEBUG - DiscordBot] List of guilds: " + jda.getGuilds());
+            System.out.println("[DEBUG - DiscordBot] Awaiting connection...");
+        }
+        try {
+        	jda.awaitReady();
+        	if(debugPrintouts)
+        		System.out.println("[DEBUG - DiscordBot] Successfully connected.");
+        } catch (Exception e) {
+        	e.printStackTrace();
+        }
     }
     
     public static JDA getJda() {
